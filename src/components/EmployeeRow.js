@@ -90,7 +90,6 @@ class EmployeeRow extends Component {
       }, () => console.log(this.state.sort));
 
     }
-
     console.log('button clicked');
   }
 
