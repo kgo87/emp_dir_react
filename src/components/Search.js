@@ -5,8 +5,8 @@ import '../styles/Search.css'
 
 function Search(props) {
   return (
-    <form>
-      <div className="form-group">
+    <form className = "form-inline">
+      <div className="form-group mx-sm-3 mb-2">
         <label htmlFor="search"></label>
         <input
           onChange={props.handleInputChange}
@@ -17,7 +17,7 @@ function Search(props) {
           placeholder="Search Employee"
           id="search"
         />
-        {/* <button onClick={props.handleFormSubmit} className="btn btn-info">
+        <button onClick={props.handleFormSubmit} className="btn btn-info">
           Search
         </button>
         <button onClick={props.refreshPage} className="btn btn-info">
@@ -25,7 +25,7 @@ function Search(props) {
         </button>
         <button onClick={props.clearSearch} className="btn btn-info">
           Clear Search
-        </button> */}
+        </button>
       </div>
     </form>
   );
