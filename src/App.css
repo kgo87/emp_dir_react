@@ -1,0 +1,12 @@
+* {
+    padding: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+  }
+
+  
+  .Main {
+    text-align: center;
+    background-color: beige;
+
+  }
