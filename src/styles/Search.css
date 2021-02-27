@@ -1,0 +1,11 @@
+form {
+    margin: 50px;
+}
+
+form button {
+    background-color: teal;
+}
+
+.form-group {
+    display: flex;
+}
