@@ -5,8 +5,6 @@ import Card from './Card';
 import Search from './Search';
 
 
-
-
 class EmployeeRow extends Component {
   state = {
     employees: [],
@@ -14,7 +12,6 @@ class EmployeeRow extends Component {
     search: '',
     sort: ''
   };
-
 
   componentDidMount() {
     this.empSearch();
@@ -49,7 +46,6 @@ class EmployeeRow extends Component {
     this.setState({ filteredList: filteredList });
   };
 
-
   handleInputChange = event => {
     const value = event.target.value;
     const name = event.target.name;
@@ -63,15 +59,13 @@ class EmployeeRow extends Component {
     this.setState({
       filteredList: this.state.employees
     });
+    this.clearForm();
   };
-
 
   handleFormSubmit = event => {
     event.preventDefault();
     this.nameSearch(this.state.search);
   };
-
-
 
   handleSort(event, sortKey){
     const data = this.state.filteredList;
@@ -88,14 +82,9 @@ class EmployeeRow extends Component {
       this.setState ({
         sort: 'asc'
       }, () => console.log(this.state.sort));
-
     }
     console.log('button clicked');
   }
-
-
-
-
 
   render() {
     console.log(this.state);
